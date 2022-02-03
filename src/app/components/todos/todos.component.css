@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.todos {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.todo {
+  display: flex;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.todo:nth-child(even) {
+  background-color: #eee;
+}
+
+.todo:last-of-type {
+  border-bottom: 0;
+}
+
+.todo .id {
+  flex: 1 1 50px;
+}
+
+.todo .content {
+  flex: 1 1 100%;
+}
+
+.todo.done .content {
+  text-decoration: line-through;
+}
+
+.todo-input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background-color: #f3f3f3;
+  margin-top: 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+.todo-submit {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: #fff;
+  margin: 15px auto;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
